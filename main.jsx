@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
+import logo from "./logo.png";
 
 const money = (value) =>
   new Intl.NumberFormat("en-AU", {
@@ -468,7 +469,7 @@ function App() {
   return (
     <main>
       <header className="hero">
-        <div className="brand"><div className="logo"><img src="/logo.png" alt="Nima Rahimi logo" /></div><div><p>NIMA RAHIMI</p><h1>Property Investment Calculator V3.5</h1><span>Private portfolio modelling tool — 10, 12 and 15-year comparison.</span></div></div>
+        <div className="brand"><div className="logo"><img src={logo} alt="Nima Rahimi logo" /></div><div><p>NIMA RAHIMI</p><h1>Property Investment Calculator V3.5</h1><span>Private portfolio modelling tool — 10, 12 and 15-year comparison.</span></div></div>
         <div className="owner"><strong>Owner: Nima Rahimi</strong><span>Unauthorised copying or reuse is not permitted.</span></div>
       </header>
 
